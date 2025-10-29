@@ -1,0 +1,43 @@
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 12px;
+  background: #87CEEB;
+  cursor: pointer;
+  margin-right: 5px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.tab.active {
+  background: #2E8B57;
+  color: white;
+}
+
+input,
+select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  background: linear-gradient(135deg, #2E8B57, #228B22);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drainage System - Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { 
+            font-family: Roboto, sans-serif; 
+            background: linear-gradient(to bottom, #87CEEB, #2E8B57); 
+            height: 100vh; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            margin: 0; 
+        }
+        .login-container { 
+            background: white; 
+            padding: 40px; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+            width: 100%; 
+            max-width: 400px; 
+            text-align: center; 
+        }
+        input, button { 
+            width: 100%;
+            padding: 12px; 
+            margin: 10px 0; 
+            border: 1px solid #ccc; 
+            border-radius: 5px; 
+            box-sizing: border-box; 
+        }
+        input { 
+            border: 1px solid #ccc; 
+        }
+        button { 
+            background: #2E8B57; 
+            color: white; 
+            border: none; 
+            cursor: pointer; 
+            font-size: 16px; 
+        }
+        button:hover { 
+            background: #228B22; 
+            transform: translateY(-1px); /* Subtle lift effect */
+        }
+        .logo { 
+            font-size: 24px; 
+            color: #2E8B57; 
+            margin-bottom: 20px; 
+        }
+        .error { 
+            color: #DC143C; 
+            font-size: 14px; 
+            margin-top: 10px; 
+        }
+        a { 
+            color: #2E8B57; 
+            text-decoration: none; 
+        }
+        a:hover { 
+            text-decoration: underline; 
+        }
+        @media (max-width: 480px) { 
+            .login-container { 
+                padding: 20px; 
+            } 
+            input, button { 
+                padding: 10px; 
+            } 
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo"><i class="fas fa-water"></i> Drainage Monitoring System</div>
+        <form>
+            <input type="email" placeholder="Enter your LGU email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="button" onclick="alert('SMS code sent!')">Send SMS Code for 2FA</button>
+            <input type="text" placeholder="Enter SMS Code" style="margin-top: 10px;">
+            <button type="submit">Login</button>
+        </form>
+        <p><a href="#">Forgot Password?</a> | <a href="#">Contact Support</a></p>
+        <div class="error" style="display: none;">Invalid credentials. Try again.</div>
+    </div>
+</body>
+</html>
