@@ -13,11 +13,11 @@
 <body>
   <div class="sidebar" id="sidebar">
     <h2><i style="cursor: pointer;" id="toggleBtn" class="fas fa-bars"></i> Menu</h2>
-    <a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
-    <a href="monitoring.html"><i class="fas fa-eye"></i> Monitoring</a>
-    <a href="alert&notification.html"><i class="fas fa-bell"></i> Alerts</a>
+    <a href="dashboard.php"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+    <a href="monitoring.php"><i class="fas fa-eye"></i> Monitoring</a>
+    <a href="alert&notification.php"><i class="fas fa-bell"></i> Alerts</a>
     <a href="#" class="active"><i class="fas fa-chart-bar"></i> Reports</a>
-    <a href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+    <a href="settings.php"><i class="fas fa-cog"></i> Settings</a>
   </div>
   <div class="main-content">
     <div class="header">
