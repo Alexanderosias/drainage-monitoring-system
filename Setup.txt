@@ -1,0 +1,13 @@
+SAMPLE USER
+Email: alexanderosias123@gmail.com
+Pass: 12345678
+
+EMAIL USED FOR SMTP SETUP
+Email: lgubalangiga@gmail.com
+Pass: lgubalangiga123  (For new device login verification just message me.)
+
+To add sample user, just query this:
+INSERT INTO users (email, password) VALUES ('your-email', 'your-hashed-password');
+
+To know your hashed pashword, just edit the hash_password.php "$password" value then access it with this link: http://localhost/hash_password.php to get your hashed password. 
+( "hash_password.php" will be deleted after implementing settings/users page. )
